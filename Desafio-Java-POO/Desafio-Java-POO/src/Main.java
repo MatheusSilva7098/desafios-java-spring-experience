@@ -2,11 +2,10 @@ import br.com.desafio.dominio.Bootcamp;
 import br.com.desafio.dominio.Curso;
 import br.com.desafio.dominio.Dev;
 import br.com.desafio.dominio.Mentoria;
+
 import java.time.LocalDate;
-
 public class Main {
-
-    public static void Main (String [] args) {
+    public static void main (String [] args) {
 
         Curso curso1 = new Curso();
         curso1.setTitulo("curso java");
@@ -31,14 +30,15 @@ public class Main {
         Bootcamp bootcamp = new Bootcamp();
         bootcamp.setNome("Bootcamp Java Developer");
         bootcamp.setDescricao("Descrição Bootcamp Java Develooper");
-        bootcamp.getCenteudos().add(curso1);
-        bootcamp.getCenteudos().add(curso2);
-        bootcamp.getCenteudos().add(mentoria);
+        bootcamp.getConteudos().add(curso1);
+        bootcamp.getConteudos().add(curso2);
+        bootcamp.getConteudos().add(mentoria);
 
         Dev devMatheus = new Dev();
         devMatheus.setNome("Matheus");
         devMatheus.inscreverBootcamp(bootcamp);
         System.out.println("Conteúdos Inscritos Matheus:" + devMatheus.getConteudosInscritos());
+        devMatheus.progredir();
         devMatheus.progredir();
         System.out.println("-");
         System.out.println("Conteúdos Inscritos Matheus:" + devMatheus.getConteudosInscritos());

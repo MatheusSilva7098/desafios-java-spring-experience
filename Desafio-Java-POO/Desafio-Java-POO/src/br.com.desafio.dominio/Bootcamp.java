@@ -53,12 +53,12 @@ public class Bootcamp {
         this.devsinscritos = devsinscritos;
     }
 
-    public Set<Conteudo> getCenteudos() {
+    public Set<Conteudo> getConteudos() {
         return conteudos;
     }
 
-    public void setCenteudos(Set<Conteudo> centeudos) {
-        this.conteudos = centeudos;
+    public void setConteudos(Set<Conteudo> conteudos) {
+        this.conteudos = conteudos;
     }
 
     @Override
